@@ -78,30 +78,30 @@ to support resources.
 		<legend>Volunteer Interests</legend>
 		<p>
 			<input type="radio" id="program1" name="program" value="Program1" required="required" />
-			<label for="program1">Program 1</label>
+			<label for="program1">Event Setup</label>
 			<input type="radio" id="program2" name="program" value="Program2" />
-			<label for="program2">Program 2</label>
+			<label for="program2">Community Events</label>
 			<input type="radio" id="program3" name="program" value="Program3" />
-			<label for="program3">Program 3</label>
+			<label for="program3">Fundrasing</label>
 
 			<br />
 
 			<input type="radio" id="program4" name="program" value="Program4" />
-			<label for="program4">Program 4</label>
+			<label for="program4">Registration Help</label>
 			<input type="radio" id="program5" name="program" value="Program5" />
-			<label for="program5">Program 5</label>			
+			<label for="program5">Promotion</label>			
 			<input type="radio" id="program6" name="program" value="Program6" />
-			<label for="program6">Program 6</label>				
+			<label for="program6">Assitantance</label>				
 		</p>
 		<p><label for="Preference">Biggest Preference</label>
 			<select name="coordinator" id="coordinator" required="required">
 				<option value="">Please Select</option>
-				<option value="Option1">Option 1</option>
-				<option value="Option2">Option 2</option>
-				<option value="Option3">Option 3</option>
-				<option value="Option4">Option 4</option>
-				<option value="Option5">Option 5</option>
-				<option value="Option6">Option 6</option>
+				<option value="Option1">Event Setup</option>
+				<option value="Option2">Community Events</option>
+				<option value="Option3">Fundraising</option>
+				<option value="Option4">Registration Help</option>
+				<option value="Option5">Promotion</option>
+				<option value="Option6">Assistance</option>
 			</select>
 		</p>
 	</fieldset>
@@ -117,13 +117,13 @@ to support resources.
 				placeholder="Write description here..."></textarea>
 		</p>
 	</fieldset>
- <!-- Data input adding 4  /-->
+
 	<fieldset>
 		<legend>Preferred Date / Availability</legend>
 		<p><label for="prefDate">Date</label>
 			<input type="text" name="prefDate" id="prefDate" required="required"
 				placeholder="dd/mm/yyyy"
-				pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}"
+				pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$"
 				title="Enter date as dd/mm/yyyy" />
 		</p>
 		<p><label for="availability">Availability</label>
@@ -135,7 +135,7 @@ to support resources.
 			</select>
 		</p>
 	</fieldset>
- <!-- Submitting data   /-->
+
 	<input type="submit" value="Book" />
 	<input type="reset" value="Reset form" />
 
