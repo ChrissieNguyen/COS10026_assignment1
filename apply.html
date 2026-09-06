@@ -77,21 +77,26 @@ to support resources.
 	<fieldset>
 		<legend>Volunteer Interests</legend>
 		<p>
-			<input type="radio" id="program1" name="program" value="Program1" required="required" />
+			<input type="checkbox" id="program1" name="program[]" value="Program1" />
 			<label for="program1">Event Setup</label>
-			<input type="radio" id="program2" name="program" value="Program2" />
-			<label for="program2">Community Events</label>
-			<input type="radio" id="program3" name="program" value="Program3" />
-			<label for="program3">Fundrasing</label>
+
+			<input type="checkbox" id="program2" name="program[]" value="Program2" />
+			<label for="program2">     Community Events</label>
+
+			<input type="checkbox" id="program3" name="program[]" value="Program3" />
+			<label for="program3">Fundraising</label>
 
 			<br />
+			<br />
 
-			<input type="radio" id="program4" name="program" value="Program4" />
+			<input type="checkbox" id="program4" name="program[]" value="Program4" />
 			<label for="program4">Registration Help</label>
-			<input type="radio" id="program5" name="program" value="Program5" />
-			<label for="program5">Promotion</label>			
-			<input type="radio" id="program6" name="program" value="Program6" />
-			<label for="program6">Assitantance</label>				
+
+			<input type="checkbox" id="program5" name="program[]" value="Program5" />
+			<label for="program5">Promotion</label>
+
+			<input type="checkbox" id="program6" name="program[]" value="Program6" />
+			<label for="program6">Assistance</label>			
 		</p>
 		<p><label for="Preference">Biggest Preference</label>
 			<select name="coordinator" id="coordinator" required="required">
