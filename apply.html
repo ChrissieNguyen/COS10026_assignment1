@@ -20,36 +20,122 @@ to support resources.
 <html>
 <head>
   <meta charset="utf-8" />
-  <meta name="Application" content="Volunteer opportunities" />
+  <meta name="description" content="Volunteer registration application form" />
   <meta name="author" content="Jasryan Singh" />
   <title>Volunteer Registration</title>
 </head>
-</body>
+<body>
 
 <a href="about.html">
-	<img src="Red White Simple Volunteer Community Logo.png" alt="G03 Logo" />
+	<img src="Red White Simple Volunteer Community Logo.png" alt="G03 Logo" width="200" />
 </a>
 
 <h1>Volunteer Registration</h1>
-<p> </p>
-<p> </p>
 
-<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">.  
+<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+	<fieldset>
+	<legend>Volunteer Details</legend>
+		</p>
+		<label for="givenName">Given Name</label>
+			<input type="text" name="givenName" id="givenName" maxlength="15" required="required"
+				pattern="[A-Za-z]+" title="Alphabetical characters only" />
 
-   <fieldset>
-
-   </fieldset>
-
-   <fieldset>
-    
-   </fieldset>
-
-   <fieldset>
-    
-   </fieldset>
+		<label for="familyName">Family Name</label>
+			<input type="text" name="familyName" id="familyName" maxlength="15" required="required"
+				pattern="[A-Za-z]+" title="Alphabetical characters only" />
+	</fieldset>
 
 
 
+
+<br />
+
+
+
+    <fieldset>
+        <legend>Contact Details</legend>
+
+        <br />
+
+        <label for="phonenumber">Phone Number</label> 
+		<br />
+		<input type="text" name="phonenumber" id="phonenumber" required="required"
+			pattern="\d{7,10}" title="Enter between 7 and 10 digits" /> 
+
+        <br />
+        <br />
+
+        <label for="email">Email</label>
+		<br />
+        <input type="email" name="email" id="email" required="required"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email address" />
+    </fieldset>
+
+
+	<br />
+
+	<fieldset>
+		<legend>Volunteer Interests</legend>
+		<p>
+			<input type="radio" id="program1" name="program" value="Program1" required="required" />
+			<label for="program1">Program 1</label>
+			<input type="radio" id="program2" name="program" value="Program2" />
+			<label for="program2">Program 2</label>
+			<input type="radio" id="program3" name="program" value="Program3" />
+			<label for="program3">Program 3</label>
+
+			<br />
+
+			<input type="radio" id="program4" name="program" value="Program4" />
+			<label for="program4">Program 4</label>
+			<input type="radio" id="program5" name="program" value="Program5" />
+			<label for="program5">Program 5</label>			
+			<input type="radio" id="program6" name="program" value="Program6" />
+			<label for="program6">Program 6</label>				
+		</p>
+		<p><label for="Preference">Biggest Preference</label>
+			<select name="coordinator" id="coordinator" required="required">
+				<option value="">Please Select</option>
+				<option value="Option1">Option 1</option>
+				<option value="Option2">Option 2</option>
+				<option value="Option3">Option 3</option>
+				<option value="Option4">Option 4</option>
+				<option value="Option5">Option 5</option>
+				<option value="Option6">Option 6</option>
+			</select>
+		</p>
+	</fieldset>
+
+	<fieldset>
+		<legend>Experience</legend>
+		<p>
+		Any experience in volunteering or working with community programs? 
+		<br />
+		Completely fine if not applicable.
+		</p>
+			<textarea id="description" name="description" rows="4" cols="50"
+				placeholder="Write description here..."></textarea>
+		</p>
+	</fieldset>
+ <!-- Data input adding 4  /-->
+	<fieldset>
+		<legend>Preferred Date / Availability</legend>
+		<p><label for="prefDate">Date</label>
+			<input type="text" name="prefDate" id="prefDate" required="required"
+				placeholder="dd/mm/yyyy"
+				pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}"
+				title="Enter date as dd/mm/yyyy" />
+		</p>
+		<p><label for="availability">Availability</label>
+			<select name="availability" id="availability" required="required">
+				<option value="">Please Select</option>
+				<option value="Morning">Morning</option>
+				<option value="Afternoon">Afternoon</option>
+				<option value="Evening">Evening</option>
+			</select>
+		</p>
+	</fieldset>
+ <!-- Submitting data   /-->
 	<input type="submit" value="Book" />
 	<input type="reset" value="Reset form" />
 
@@ -57,16 +143,3 @@ to support resources.
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
