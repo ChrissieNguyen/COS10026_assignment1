@@ -43,6 +43,9 @@ to support resources.
 			pattern="[A-Za-z0-9]{6}" title="Enter exactly 6 alphanumeric characters" />
 	</fieldset>
 
+	<br />
+
+
 	<fieldset>
 
 	<legend>Personal Details</legend>
@@ -50,7 +53,7 @@ to support resources.
 		<label for="givenName">Given Name</label>
 		<br />
 
-			<input type="text" name="givenName" id="givenName" maxlength="15" required="required"
+			<input type="text" name="givenName" id="givenName" maxlength="20" required="required"
 				pattern="[A-Za-z]+" title="Alphabetical characters only" />
 
 		<br />
@@ -68,7 +71,7 @@ to support resources.
 		<br />		
 		<br />
 
-		<label for dateOfBirth">Date of Birth</label>
+		<label for="dateOfBirth">Date of Birth</label>
 		<br />
 		
 		<input type="text" name="dob" id="dob" required="required"
@@ -95,9 +98,7 @@ to support resources.
 		</fieldset>
 	</fieldset>
  
-	<br />
  
-		<fieldset>
 
 
 
@@ -149,16 +150,23 @@ to support resources.
 			<label for="program5">Promotion</label>
 
 			<input type="checkbox" id="program6" name="program[]" value="Program6" />
-			<label for="program6">Assistance</label>			
+			<label for="program6">Assistance</label>		
+	</fieldset>			
+	
+	<br />
 
+	<fieldset
 		<legend>Other Skills</legend>
+			<label for="otherSkills">Other Skills</label>
 			<br />
 			<textarea id="otherSkills" name="otherSkills" rows="4" cols="50"
 				placeholder="List any other relevant skills here..."></textarea>
-		</p>
 	</fieldset>
 
+	<br />
+
 	<fieldset>
+
 	<legend>Address</legend>
  
 		<label for="streetAddress">Street Address</label>
@@ -201,9 +209,10 @@ to support resources.
 	</fieldset>
  
 	<br />
-	</fieldset>
 
-	<input type="submit" value="Book" />
+
+
+	<input type="submit" value="Submit Application" />
 	<input type="reset" value="Reset form" />
 
 </form>
