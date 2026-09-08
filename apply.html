@@ -78,6 +78,24 @@ to support resources.
  
 		<br />
 		<br />
+		
+		<fieldset>
+		<legend>Gender</legend>
+			<input type="radio" id="genderMale" name="gender" value="Male" required="required" />
+			<label for="genderMale">Male</label>
+ 
+			<input type="radio" id="genderFemale" name="gender" value="Female" />
+			<label for="genderFemale">Female</label>
+ 
+			<input type="radio" id="genderOther" name="gender" value="Other" />
+			<label for="genderOther">Other</label>
+ 
+			<input type="radio" id="genderPreferNot" name="gender" value="Prefer not to say" />
+			<label for="genderPreferNot">Prefer not to say</label>
+		</fieldset>
+	</fieldset>
+ 
+	<br />
  
 		<fieldset>
 
@@ -111,8 +129,7 @@ to support resources.
 	<br />
 
 	<fieldset>
-		<legend>Volunteer Interests</legend>
-		<p>
+		<legend>Skills</legend>
 			<input type="checkbox" id="program1" name="program[]" value="Program1" />
 			<label for="program1">Event Setup</label>
 
@@ -133,29 +150,11 @@ to support resources.
 
 			<input type="checkbox" id="program6" name="program[]" value="Program6" />
 			<label for="program6">Assistance</label>			
-		</p>
-		<p><label for="Preference">Biggest Preference</label>
-			<select name="coordinator" id="coordinator" required="required">
-				<option value="">Please Select</option>
-				<option value="Event Setup">Event Setup</option>
-				<option value="Community Events">Community Events</option>
-				<option value="Fundraising">Fundraising</option>
-				<option value="Registration Help">Registration Help</option>
-				<option value="Promotion">Promotion</option>
-				<option value="Assistance">Assistance</option>
-			</select>
-		</p>
-	</fieldset>
 
-	<fieldset>
-		<legend>Experience</legend>
-		<p>
-		Any experience in volunteering or working with community programs? 
-		<br />
-		Completely fine if not applicable.
-		</p>
-			<textarea id="description" name="description" rows="4" cols="50"
-				placeholder="Write description here..."></textarea>
+		<legend>Other Skills</legend>
+			<br />
+			<textarea id="otherSkills" name="otherSkills" rows="4" cols="50"
+				placeholder="List any other relevant skills here..."></textarea>
 		</p>
 	</fieldset>
 
