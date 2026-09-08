@@ -159,21 +159,48 @@ to support resources.
 	</fieldset>
 
 	<fieldset>
-		<legend>Preferred Date / Availability</legend>
-		<p><label for="prefDate">Date</label>
-			<input type="text" name="prefDate" id="prefDate" required="required"
-				placeholder="dd/mm/yyyy"
-				pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$"
-				title="Enter date as dd/mm/yyyy" />
-		</p>
-		<p><label for="availability">Availability</label>
-			<select name="availability" id="availability" required="required">
-				<option value="">Please Select</option>
-				<option value="Morning">Morning</option>
-				<option value="Afternoon">Afternoon</option>
-				<option value="Evening">Evening</option>
-			</select>
-		</p>
+	<legend>Address</legend>
+ 
+		<label for="streetAddress">Street Address</label>
+		<br />
+		<input type="text" name="streetAddress" id="streetAddress" maxlength="40" required="required"
+			title="Maximum 40 characters" />
+ 
+		<br />
+		<br />
+ 
+		<label for="suburb">Suburb/Town</label>
+		<br />
+		<input type="text" name="suburb" id="suburb" maxlength="40" required="required"
+			title="Maximum 40 characters" />
+ 
+		<br />
+		<br />
+ 
+		<label for="state">State</label>
+		<br />
+		<select name="state" id="state" required="required">
+			<option value="">Please Select</option>
+			<option value="VIC">VIC</option>
+			<option value="NSW">NSW</option>
+			<option value="QLD">QLD</option>
+			<option value="NT">NT</option>
+			<option value="WA">WA</option>
+			<option value="SA">SA</option>
+			<option value="TAS">TAS</option>
+			<option value="ACT">ACT</option>
+		</select>
+ 
+		<br />
+		<br />
+ 
+		<label for="postcode">Postcode</label>
+		<br />
+		<input type="text" name="postcode" id="postcode" maxlength="4" required="required"
+			pattern="\d{4}" title="Enter exactly 4 digits" />
+	</fieldset>
+ 
+	<br />
 	</fieldset>
 
 	<input type="submit" value="Book" />
