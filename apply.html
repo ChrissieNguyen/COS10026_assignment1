@@ -23,6 +23,8 @@ to support resources.
   <meta name="description" content="Volunteer registration application form" />
   <meta name="author" content="Jasryan Singh" />
   <title>Volunteer Registration</title>
+  <link rel="stylesheet" href="styles/a1Style.css">
+
 </head>
 <body>
 
@@ -83,7 +85,8 @@ to support resources.
 		<br />
 		
 		<fieldset>
-		<legend>Gender</legend>
+		<label>Gender</label>
+		<br />
 			<input type="radio" id="genderMale" name="gender" value="Male" required="required" />
 			<label for="genderMale">Male</label>
  
@@ -155,10 +158,9 @@ to support resources.
 	
 	<br />
 
-	<fieldset
+	<fieldset>
 		<legend>Other Skills</legend>
-			<label for="otherSkills">Other Skills</label>
-			<br />
+			<label for="otherSkills"></label>
 			<textarea id="otherSkills" name="otherSkills" rows="4" cols="50"
 				placeholder="List any other relevant skills here..."></textarea>
 	</fieldset>
