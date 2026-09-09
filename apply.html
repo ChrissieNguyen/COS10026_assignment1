@@ -23,16 +23,30 @@ made
   <meta name="description" content="Volunteer registration application form" />
   <meta name="author" content="Jasryan Singh" />
   <title>Volunteer Registration</title>
-  <link rel="stylesheet" href="styles/a1Style.css">
+  <link rel="stylesheet" href="styles/styles.css">
+
+<body>
+	<a class="skip_link" href="#main_content">Skip to main content</a>
+
+	<header class="site_header">
+		<div class="nav_wrap">
+			<a class="brand" href="index.html">
+				<img src="Red White Simple Volunteer Community Logo.png" alt="G03 logo" width="200">
+			</a>
+			<nav aria-label="Primary navigation">
+				<ul class="nav_list">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="jobs.html">Volunteer opportunities</a></li>
+					<li><a href="apply.html">Register</a></li>
+					<li><a href="about.html" aria-current="page">About us</a></li>
+				</ul>
+			</nav>
+		</div>  
 
 </head>
+
 <body>
 
-<a href="about.html">
-	<img src="Red White Simple Volunteer Community Logo.png" alt="G03 Logo" width="200" />
-</a>
-
-<h1>Volunteer Registration</h1>
 
 <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
 
@@ -134,26 +148,31 @@ made
 
 	<fieldset>
 		<legend>Skills</legend>
-			<input type="checkbox" id="program1" name="program[]" value="Program1" />
-			<label for="program1">Event Setup</label>
+			<input type="checkbox" id="eventSetup" name="program[]" value="Program1" />
+			<label for="eventSetup">Event Setup</label>
 
-			<input type="checkbox" id="program2" name="program[]" value="Program2" />
-			<label for="program2">     Community Events</label>
+			<input type="checkbox" id="communityEvents" name="program[]" value="Program2" />
+			<label for="communityEvents">     Community Events</label>
 
-			<input type="checkbox" id="program3" name="program[]" value="Program3" />
-			<label for="program3">Fundraising</label>
+			<input type="checkbox" id="fundraising" name="program[]" value="Program3" />
+			<label for="fundraising">Fundraising</label>
 
 			<br />
 			<br />
 
-			<input type="checkbox" id="program4" name="program[]" value="Program4" />
-			<label for="program4">Registration Help</label>
+			<input type="checkbox" id="registrationHelp" name="program[]" value="Program4" />
+			<label for="registrationHelp">Registration Help</label>
 
-			<input type="checkbox" id="program5" name="program[]" value="Program5" />
-			<label for="program5">Promotion</label>
+			<input type="checkbox" id="promotion" name="program[]" value="Program5" />
+			<label for="promotion">Promotion</label>
 
-			<input type="checkbox" id="program6" name="program[]" value="Program6" />
-			<label for="program6">Assistance</label>		
+			<input type="checkbox" id="assistance" name="program[]" value="Program6" />
+			<label for="assistance">Assistance</label>
+			
+			<br />
+			<br />
+			<input type="checkbox" id="Other" name="program[]" value="Program7" />
+			<label for="Other">Other</label>
 	</fieldset>			
 	
 	<br />
