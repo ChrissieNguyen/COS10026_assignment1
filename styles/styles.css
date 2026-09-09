@@ -619,6 +619,109 @@ input[type="reset"] {
     }
 }
 
+/* about page */
+/* About page: copy these rules into styles/styles.css. */
+.member_contributions dt {
+    color: #092f43;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.student_id {
+    background-color: #cceff0;
+    border-radius: 0.35rem;
+    color: #17313d;
+    display: inline-block;
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+    padding: 0.15rem 0.5rem;
+}
+
+.quote_grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.member_quote {
+    background-color: #edf7f6;
+    border-left: 0.3rem solid #087e8b;
+    margin: 0;
+    padding: 1rem;
+}
+
+.group_figure {
+    background-color: #fff8e9;
+    border: 0.15rem solid #c8d9dc;
+    border-radius: 1rem;
+    margin: 1.5rem auto;
+    max-width: 56rem;
+    overflow: hidden;
+    padding: 1rem;
+    text-align: center;
+}
+
+.group_figure img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.group_figure:hover {
+    border-color: #ec765e;
+    box-shadow: 0 0.75rem 2rem rgba(9, 47, 67, 0.15);
+}
+
+.table_wrapper {
+    overflow-x: auto;
+}
+
+.team_table {
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    width: 100%;
+}
+
+.team_table caption {
+    color: #092f43;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.team_table th,
+.team_table td {
+    border: 1px solid #c8d9dc;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.team_table thead {
+    background-color: #092f43;
+    color: #ffffff;
+}
+
+.team_table tbody tr:nth-child(even) {
+    background-color: #edf7f6;
+}
+
+.team_table tbody tr:hover {
+    background-color: #cceff0;
+}
+
+@media (max-width: 48rem) {
+    .quote_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .student_id {
+        display: block;
+        margin: 0.35rem 0 0;
+        width: fit-content;
+    }
+}
+
+
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;

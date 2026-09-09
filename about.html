@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="keywords" content="HTML5, CSS layout" />
-	<meta name="author" content="A Lecturer" />
+	<meta name="author" content="Gavin, Jasryan, Chrissie" />
 	<meta name="description" content="Learn more about the G03 Community volunteer project team.">
 	<link rel="stylesheet" href="styles/styles.css">
 	<title>About us</title>
@@ -18,61 +18,127 @@
 			<a class="brand" href="index.html">
 				<img src="Red White Simple Volunteer Community Logo.png" alt="G03 logo" width="200">
 			</a>
-            <nav aria-label="Primary navigation">
-                <ul class="nav_list">
-                    <li><a href="index.html" >Home</a></li>
-                    <li><a href="jobs.html" aria-current="page">Volunteer opprtunities</a></li>
-                    <li><a href="apply.html">Register</a></li>
-                    <li><a href="about.html">About us</a></li>
-                </ul>
-            </nav>
+			<nav aria-label="Primary navigation">
+				<ul class="nav_list">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="jobs.html">Volunteer opprtunities</a></li>
+					<li><a href="apply.html">Register</a></li>
+					<li><a href="about.html" aria-current="page">About us</a></li>
+				</ul>
+			</nav>
 		</div>
 	</header>
 
 	<main id="main_content" class="shell">
-		<section aria-labelledby="about_heading">
-			<h2 id="about_heading">About us</h2>
 
-			<h3>Who are we?</h3>
+		<!-- group introduction -->
+		<section>
+			<h1>About us</h1>
+			<p class="about_intro">
+				We are the G03 ClickJacking team. We created this recruitment website to connect volunteers with
+				community programs and meaningful opportunities.
+			</p>
+		</section>
+		<!-- Group name and tutorial class day/time presented using a nested list-->
+		<section>
+			<h2>Our group:</h2>
 			<ul>
-				<li>Group name: G03 ClickJacking
+				<li>Group name: G03 ClickJacking</li>
+				<li>Tutorial class:
 					<ul>
-						<li>Tutorial class: Wendsday 12:30pm to 2:30pm</li>
+						<li>Day: Wendsday 12:30pm to 2:30pm</li>
+						<li>Start time: 12:30pm</li>
+						<li>Finish time: 2.30pm</li>
 					</ul>
 				</li>
 			</ul>
+		</section>
+		<!-- Member contributions -->
+		<section>
+			<h2>Member contributions</h2>
+			<dl class="member_contributions">
+				<dt>Gavin<span class="student_id">Student ID: 106182137</span></dt>
+				<dd>Developed the About page, Jobs page and their related CSS styling.</dd>
 
-			<h3>Member Contributions</h3>
-			<dl>
-				<dt>Gavin</dt>
-				<dd>About page & Jobs Page & CSS</dd>
-				<dt>jazzi</dt>
-				<dd>Applying form front end & CSS</dd>
-				<dt>Chrissie</dt>
-				<dd>Home page & CSS</dd>
+				<dt>Jasryan<span class="student_id">Student ID: 106520041</span></dt>
+				<dd>Developed the volunteer application form and its HTML5 validation, and their related CSS styling.
+				</dd>
+
+				<dt>Chrissie<span class="student_id">Student ID: 105447725</span></dt>
+				<dd>Developed the Home page and its related responsive CSS styling.</dd>
+
 			</dl>
-
-			<h3>Quotes In First Languages</h3>
+		</section>
+		<!-- a quote from each member in their first language -->
+		<section>
+			<h2>Quotes In First Languages</h2>
 			<dl>
 				<dt>Gavin (Chinese)</dt>
 				<dd>"创新不完全是商业驱动的，还需要好奇心和创造欲。 梁文锋"</dd>
-				<dd>English: "Innovation isn't always driven by capitalism; it also requires curiosity and a desire to create."</dd>
+				<dd>English: "Innovation isn't always driven by capitalism; it also requires curiosity and a desire to
+					create."</dd>
 			</dl>
-
-			<h3>Group Photo</h3>
-			<figure>
-				<img src="assets/photo.jpg" alt="Group G03 members smiling together during Labs 9/9/26" loading="lazy">
-			</figure>
-
-			
+			<dl>
+				<dt>Chrissie (Vietnamese)</dt>
+				<dd>“Có công mài sắt, có ngày nên kim.”</dd>
+				<dd>English: “With patience and hard work, an iron bar can eventually be sharpened into a needle.”</dd>
+			</dl>
 		</section>
+		<!--group photo  -->
+		<section>
+			<h2 id="photo_heading">Meet the team</h2>
+			<figure class="group_figure">
+				<img src="assets/photo.jpg" alt="Group G03 members smiling together during Labs 9/9/26" loading="lazy"
+					width="900">
+				<figcaption>G03 ClickJacking team members Gavin, Jasryan and Chrissie.</figcaption>
+			</figure>
+		</section>
+		<!-- A table presenting suitable fun facts about team members, including a caption -->
+		<section>
+			<h2 id="facts_heading">Team fun facts</h2>
+			<div class="table_wrapper">
+				<table class="team_table">
+					<caption>Interests and fun facts about the G03 ClickJacking team</caption>
+					<thead>
+						<tr>
+							<th scope="col">Member</th>
+							<th scope="col">Favourite activity</th>
+							<th scope="col">Fun fact</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">Gavin</th>
+							<td>ADD ACTIVITY</td>
+							<td>ADD FUN FACT</td>
+						</tr>
+						<tr>
+							<th scope="row">Jasryan</th>
+							<td>ADD ACTIVITY</td>
+							<td>ADD FUN FACT</td>
+						</tr>
+						<tr>
+							<th scope="row">Chrissie</th>
+							<td>Playing Chinese Guzheng instrument</td>
+							<td>I’m fascinated by the guzheng and would love to learn how to play it someday. Fo now,
+								i'm complete lost lmao</td>
+						</tr>
+					</tbody>
+
+				</table>
+			</div>
+		</section>
+
+
+
 	</main>
 
 	<footer class="site-footer">
 		<div class="footer_grid">
 			<div>
 				<a class="footer_logo_and_slogan" href="index.html">
-					<img src="Red White Simple Volunteer Community Logo.png" alt="" width="50" height="50"><span>ClickJacking Community Help</span>
+					<img src="Red White Simple Volunteer Community Logo.png" alt="" width="50"
+						height="50"><span>ClickJacking Community Help</span>
 				</a>
 				<p>Connect. Contribute. Belong.</p>
 			</div>
@@ -87,11 +153,13 @@
 			<div>
 				<h2>Project</h2>
 				<p>
-					<a href="https://github.com/ChrissieNguyen/COS10026_assignment1" rel="external">GitHub repository</a>
+					<a href="https://github.com/ChrissieNguyen/COS10026_assignment1" rel="external">GitHub
+						repository</a>
 				</p>
 			</div>
 		</div>
-		<p class="shell">&copy; 2026 ClickJacking Community Help. Fictional community organisation created for COS10026.</p>
+		<p class="shell">&copy; 2026 ClickJacking Community Help. Fictional community organisation created for COS10026.
+		</p>
 	</footer>
 
 </body>
