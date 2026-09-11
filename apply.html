@@ -26,6 +26,7 @@ made
 	<title>Volunteer Registration</title>
 	<link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
 	<a class="skip_link" href="#main_content">Skip to main content</a>
 
@@ -46,230 +47,234 @@ made
 
 	</header>
 
-		<main id="main_content" class="shell">
+	<main id="main_content" class="shell">
 
 
-			<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+		<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
 
-				<fieldset>
-					<legend>Application Details</legend>
+			<fieldset>
+				<legend>Application Details</legend>
 
-					<label for="jobRef">Job Reference Number</label>
-					<br />
-					<input type="text" name="jobRef" id="jobRef" maxlength="6" required="required"
-						pattern="[A-Za-z0-9]{6}" title="Enter exactly 6 alphanumeric characters" />
-				</fieldset>
+				<label for="jobRef">Job Reference Number</label>
+				<br />
+				<input type="text" name="jobRef" id="jobRef" maxlength="6" required="required" pattern="[A-Za-z0-9]{6}"
+					title="Enter exactly 6 alphanumeric characters" />
+			</fieldset>
 
+			<br />
+
+
+			<fieldset>
+
+				<legend>Personal Details</legend>
+
+				<label for="givenName">Given Name</label>
+				<br />
+
+				<input type="text" name="givenName" id="givenName" maxlength="20" required="required"
+					pattern="[A-Za-z]+" title="Alphabetical characters only" />
+
+				<br />
 				<br />
 
 
-				<fieldset>
-
-					<legend>Personal Details</legend>
-
-					<label for="givenName">Given Name</label>
-					<br />
-
-					<input type="text" name="givenName" id="givenName" maxlength="20" required="required"
-						pattern="[A-Za-z]+" title="Alphabetical characters only" />
-
-					<br />
-					<br />
-
-
-					<label for="familyName">Family Name</label>
-
-					<br />
-
-					<input type="text" name="familyName" id="familyName" maxlength="20" required="required"
-						pattern="[A-Za-z]+" title="Alphabetical characters only" />
-
-
-					<br />
-					<br />
-
-					<label for="dateOfBirth">Date of Birth</label>
-					<br />
-
-					<input type="text" name="dob" id="dob" required="required" placeholder="dd/mm/yyyy"
-						pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$" title="Enter date as dd/mm/yyyy" />
-
-					<br />
-					<br />
-
-					<fieldset>
-						<label>Gender</label>
-						<br />
-						<input type="radio" id="genderMale" name="gender" value="Male" required="required" />
-						<label for="genderMale">Male</label>
-
-						<input type="radio" id="genderFemale" name="gender" value="Female" />
-						<label for="genderFemale">Female</label>
-
-						<input type="radio" id="genderOther" name="gender" value="Other" />
-						<label for="genderOther">Other</label>
-
-						<input type="radio" id="genderPreferNot" name="gender" value="Prefer not to say" />
-						<label for="genderPreferNot">Prefer not to say</label>
-					</fieldset>
-				</fieldset>
-
-
-
-
-
+				<label for="familyName">Family Name</label>
 
 				<br />
 
-
-
-				<fieldset>
-					<legend>Contact Details</legend>
-
-					<br />
-
-					<label for="phonenumber">Phone Number</label>
-					<br />
-					<input type="text" name="phonenumber" id="phonenumber" required="required" pattern="\d{8,12}"
-						title="Enter between 8 and 12 digits" />
-
-					<br />
-					<br />
-
-					<label for="email">Email</label>
-					<br />
-					<input type="email" name="email" id="email" required="required"
-						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email address" />
-				</fieldset>
+				<input type="text" name="familyName" id="familyName" maxlength="20" required="required"
+					pattern="[A-Za-z]+" title="Alphabetical characters only" />
 
 
 				<br />
+				<br />
 
-				<fieldset>
-					<legend>Skills</legend>
-					<input type="checkbox" id="eventSetup" name="program[]" value="Program1" />
-					<label for="eventSetup">Event Setup</label>
+				<label for="dateOfBirth">Date of Birth</label>
+				<br />
 
-					<input type="checkbox" id="communityEvents" name="program[]" value="Program2" />
-					<label for="communityEvents"> Community Events</label>
+				<input type="text" name="dob" id="dob" required="required" placeholder="dd/mm/yyyy"
+					pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$" title="Enter date as dd/mm/yyyy" />
 
-					<input type="checkbox" id="fundraising" name="program[]" value="Program3" />
-					<label for="fundraising">Fundraising</label>
-
-					<br />
-					<br />
-
-					<input type="checkbox" id="registrationHelp" name="program[]" value="Program4" />
-					<label for="registrationHelp">Registration Help</label>
-
-					<input type="checkbox" id="promotion" name="program[]" value="Program5" />
-					<label for="promotion">Promotion</label>
-
-					<input type="checkbox" id="assistance" name="program[]" value="Program6" />
-					<label for="assistance">Assistance</label>
-
-					<br />
-					<br />
-					<input type="checkbox" id="Other" name="program[]" value="Program7" />
-					<label for="Other">Other</label>
-				</fieldset>
-
+				<br />
 				<br />
 
 				<fieldset>
-					<legend>Other Skills</legend>
-					<label for="otherSkills"></label>
-					<textarea id="otherSkills" name="otherSkills" rows="4" cols="50"
-						placeholder="List any other relevant skills here..."></textarea>
+					<label>Gender</label>
+					<br />
+					<input type="radio" id="genderMale" name="gender" value="Male" required="required" />
+					<label for="genderMale">Male</label>
+
+					<input type="radio" id="genderFemale" name="gender" value="Female" />
+					<label for="genderFemale">Female</label>
+
+					<input type="radio" id="genderOther" name="gender" value="Other" />
+					<label for="genderOther">Other</label>
+
+					<input type="radio" id="genderPreferNot" name="gender" value="Prefer not to say" />
+					<label for="genderPreferNot">Prefer not to say</label>
 				</fieldset>
+			</fieldset>
+
+
+
+
+
+
+			<br />
+
+
+
+			<fieldset>
+				<legend>Contact Details</legend>
 
 				<br />
 
-				<fieldset>
-
-					<legend>Address</legend>
-
-					<label for="streetAddress">Street Address</label>
-					<br />
-					<input type="text" name="streetAddress" id="streetAddress" maxlength="40" required="required"
-						title="Maximum 40 characters" />
-
-					<br />
-					<br />
-
-					<label for="suburb">Suburb/Town</label>
-					<br />
-					<input type="text" name="suburb" id="suburb" maxlength="40" required="required"
-						title="Maximum 40 characters" />
-
-					<br />
-					<br />
-
-					<label for="state">State</label>
-					<br />
-					<select name="state" id="state" required="required">
-						<option value="">Please Select</option>
-						<option value="VIC">VIC</option>
-						<option value="NSW">NSW</option>
-						<option value="QLD">QLD</option>
-						<option value="NT">NT</option>
-						<option value="WA">WA</option>
-						<option value="SA">SA</option>
-						<option value="TAS">TAS</option>
-						<option value="ACT">ACT</option>
-					</select>
-
-					<br />
-					<br />
-
-					<label for="postcode">Postcode</label>
-					<br />
-					<input type="text" name="postcode" id="postcode" maxlength="4" required="required" pattern="\d{4}"
-						title="Enter exactly 4 digits" />
-				</fieldset>
+				<label for="phonenumber">Phone Number</label>
+				<br />
+				<input type="text" name="phonenumber" id="phonenumber" required="required" pattern="\d{8,12}"
+					title="Enter between 8 and 12 digits" />
 
 				<br />
+				<br />
+
+				<label for="email">Email</label>
+				<br />
+				<input type="email" name="email" id="email" required="required"
+					pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email address" />
+			</fieldset>
+
+
+			<br />
+
+			<fieldset>
+				<legend>Skills</legend>
+				<input type="checkbox" id="eventSetup" name="program[]" value="Program1" />
+				<label for="eventSetup">Event Setup</label>
+
+				<input type="checkbox" id="communityEvents" name="program[]" value="Program2" />
+				<label for="communityEvents"> Community Events</label>
+
+				<input type="checkbox" id="fundraising" name="program[]" value="Program3" />
+				<label for="fundraising">Fundraising</label>
+
+				<br />
+				<br />
+
+				<input type="checkbox" id="registrationHelp" name="program[]" value="Program4" />
+				<label for="registrationHelp">Registration Help</label>
+
+				<input type="checkbox" id="promotion" name="program[]" value="Program5" />
+				<label for="promotion">Promotion</label>
+
+				<input type="checkbox" id="assistance" name="program[]" value="Program6" />
+				<label for="assistance">Assistance</label>
+
+				<br />
+				<br />
+				<input type="checkbox" id="Other" name="program[]" value="Program7" />
+				<label for="Other">Other</label>
+			</fieldset>
+
+			<br />
+
+			<fieldset>
+				<legend>Other Skills</legend>
+				<label for="otherSkills"></label>
+				<textarea id="otherSkills" name="otherSkills" rows="4" cols="50"
+					placeholder="List any other relevant skills here..."></textarea>
+			</fieldset>
+
+			<br />
+
+			<fieldset>
+
+				<legend>Address</legend>
+
+				<label for="streetAddress">Street Address</label>
+				<br />
+				<input type="text" name="streetAddress" id="streetAddress" maxlength="40" required="required"
+					title="Maximum 40 characters" />
+
+				<br />
+				<br />
+
+				<label for="suburb">Suburb/Town</label>
+				<br />
+				<input type="text" name="suburb" id="suburb" maxlength="40" required="required"
+					title="Maximum 40 characters" />
+
+				<br />
+				<br />
+
+				<label for="state">State</label>
+				<br />
+				<select name="state" id="state" required="required">
+					<option value="">Please Select</option>
+					<option value="VIC">VIC</option>
+					<option value="NSW">NSW</option>
+					<option value="QLD">QLD</option>
+					<option value="NT">NT</option>
+					<option value="WA">WA</option>
+					<option value="SA">SA</option>
+					<option value="TAS">TAS</option>
+					<option value="ACT">ACT</option>
+				</select>
+
+				<br />
+				<br />
+
+				<label for="postcode">Postcode</label>
+				<br />
+				<input type="text" name="postcode" id="postcode" maxlength="4" required="required" pattern="\d{4}"
+					title="Enter exactly 4 digits" />
+			</fieldset>
+
+			<br />
 
 
 
-				<input type="submit" value="Submit Application" />
-				<input type="reset" value="Reset form" />
+			<input type="submit" value="Submit Application" />
+			<input type="reset" value="Reset form" />
 
-			</form>
-		</main>
-			<footer class="site-footer">
-				<div class="footer_grid">
-					<div>
-						<a class="footer_logo_and_slogan" href="index.html">
-							<img src="community_logo.png" alt="" width="50" height="50">
-							<span>ClickJacking Community Help</span>
-						</a>
-						<p>Connect. Contribute. Belong.</p>
-					</div>
+		</form>
+	</main>
+	<footer class="site-footer">
+		<div class="footer_grid">
+			<div>
+				<a class="footer_logo_and_slogan" href="index.html">
+					<img src="community_logo.png" alt="" width="50" height="50">
+					<span>ClickJacking Community Help</span>
+				</a>
+				<p>Connect. Contribute. Belong.</p>
+			</div>
 
-					<div>
-						<h2>Explore</h2>
-						<ul>
-							<li><a href="jobs.html">Volunteer opportunities</a></li>
-							<li><a href="apply.html">Volunteer registration</a></li>
-							<li><a href="about.html">About our team</a></li>
-						</ul>
-					</div>
+			<div>
+				<h2>Explore</h2>
+				<ul>
+					<li><a href="jobs.html">Volunteer opportunities</a></li>
+					<li><a href="apply.html">Volunteer registration</a></li>
+					<li><a href="about.html">About our team</a></li>
+				</ul>
+			</div>
 
-					<div>
-						<h2>Project</h2>
-						<p>
-							<a href="https://github.com/ChrissieNguyen/COS10026_assignment1" rel="external">
-								GitHub repository
-							</a>
-						</p>
-					</div>
-				</div>
-
-				<p class="shell">
-					&copy; 2026 ClickJacking Community Help. Fictional community organisation created for COS10026.
+			<div>
+				<h2>Project</h2>
+				<p>
+					<a href="https://github.com/ChrissieNguyen/COS10026_assignment1" rel="external">
+						GitHub repository
+					</a>
 				</p>
-			</footer>
+				<p>
+					<a href="https://chrissienguyen2408.atlassian.net/jira/software/projects/TP/boards/4/backlog"
+						rel="external">Jira</a>
+				</p>
+			</div>
+		</div>
+
+		<p class="shell">
+			&copy; 2026 ClickJacking Community Help. Fictional community organisation created for COS10026.
+		</p>
+	</footer>
 
 
 </body>
